@@ -1,0 +1,38 @@
+{
+    "name": "gpupo/pack-symfony-admin",
+    "description": "Pacote de componentes complementares para dashboards com Symfony Framework",
+    "homepage": "https://opensource.gpupo.com/pack-symfony-admin/",
+    "authors": [
+        {
+            "name": "Gilmar Pupo",
+            "email": "contact@gpupo.com"
+        }
+    ],
+    "keywords": ["common", "development"],
+    "license": "MIT",
+    "require": {
+      "gpupo/pack-symfony-common": "*",
+      "aws/aws-sdk-php-symfony": "^2.0",
+      "easycorp/easyadmin-bundle": "^2.3.4",
+      "jackalope/jackalope-doctrine-dbal": "^1.3",
+      "league/flysystem-aws-s3-v3": "^1.0",
+      "oneup/flysystem-bundle": "^3.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gpupo\\PackSymfonyAdmin\\": "src",
+            "Gpupo\\PackSymfonyAdmin\\Tests\\": "tests"
+        }
+    },
+    "require-dev": {
+        "gpupo/pack-symfony-dev": "*"
+    },
+    "scripts": {
+        "test": "APP_ENV=test simple-phpunit"
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

@@ -48,3 +48,11 @@ Proibido:
 Adicione o pacote ao seu projeto utilizando [composer](http://getcomposer.org):
 
     composer require gpupo/pack-symfony-admin
+
+## Desenvolvimento
+
+
+### Todo
+
+friendsofsymfony/oauth-server-bundle
+https://github.com/FriendsOfSymfony/FOSOAuthServerBundle/issues/625

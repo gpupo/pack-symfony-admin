@@ -11,9 +11,8 @@
     "keywords": ["common", "development"],
     "license": "MIT",
     "require": {
-      "gpupo/pack-symfony-common": "*",
-      "gpupo/pack-symfony-odm": "*",
-      "gpupo/content-butler": "^2.1",
+      "gpupo/pack-symfony-common": "^1.0",
+      "gpupo/pack-symfony-odm": "^1.1",
       "doctrine/phpcr-bundle": "^2.1",
       "aws/aws-sdk-php-symfony": "^2.1",
       "easycorp/easyadmin-bundle": "^2.3",

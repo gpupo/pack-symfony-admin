@@ -11,7 +11,7 @@
     "keywords": ["common", "development"],
     "license": "MIT",
     "require": {
-      "gpupo/pack-symfony-common": "^3.2",
+      "gpupo/pack-symfony-common": "^3.3.1",
       "gpupo/pack-symfony-odm": "^1.1",
       "doctrine/phpcr-bundle": "^2.1",
       "aws/aws-sdk-php-symfony": "^2.1",
@@ -30,7 +30,7 @@
         "gpupo/pack-symfony-dev": "*"
     },
     "scripts": {
-        "test": "APP_ENV=test simple-phpunit"
+        "test": "APP_ENV=test vendor/bin/simple-phpunit"
     },
     "config": {
         "preferred-install": "dist"

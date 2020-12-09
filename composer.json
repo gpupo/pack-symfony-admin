@@ -11,15 +11,19 @@
     "keywords": ["common", "development"],
     "license": "MIT",
     "require": {
-      "gpupo/pack-symfony-common": "^4.2",
-      "gpupo/pack-symfony-odm": "^1.1",
-      "doctrine/phpcr-bundle": "^2.1",
-      "aws/aws-sdk-php-symfony": "^2.1",
-      "easycorp/easyadmin-bundle": "^2.3.5",
-      "friendsofsymfony/ckeditor-bundle": "^2.2",
-      "league/flysystem-aws-s3-v3": "^1.0",
-      "oneup/flysystem-bundle": "^3.4"
+      "gpupo/pack-symfony-common": "^4.5 || dev-master",
+      "doctrine/phpcr-bundle": "^2.1 || dev-php-8",
+        "aws/aws-sdk-php-symfony": "^2.1",
+        "easycorp/easyadmin-bundle": "^2.3.5",
+        "league/flysystem-aws-s3-v3": "^1.0",
+        "oneup/flysystem-bundle": "^3.4"
     },
+    "repositories": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/gpupo/StofDoctrineExtensionsBundle"
+        }
+     ],
     "autoload": {
         "psr-4": {
             "Gpupo\\PackSymfonyAdmin\\": "src",
@@ -27,7 +31,7 @@
         }
     },
     "require-dev": {
-        "gpupo/pack-symfony-dev": "*"
+        "gpupo/pack-symfony-dev": "dev-master"
     },
     "scripts": {
         "test": "APP_ENV=test vendor/bin/simple-phpunit"
